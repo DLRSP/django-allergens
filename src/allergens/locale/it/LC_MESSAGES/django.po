@@ -1,0 +1,82 @@
+# Italian translations for django-allergens.
+msgid ""
+msgstr ""
+"Project-Id-Version: django-allergens 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Allergens"
+msgstr "Allergeni"
+
+msgid "Allergen"
+msgstr "Allergene"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Slug"
+msgstr "Slug"
+
+msgid "Description"
+msgstr "Descrizione"
+
+msgid "Icon"
+msgstr "Icona"
+
+msgid "Allergen index"
+msgstr "Indice allergene"
+
+msgid "Image"
+msgstr "Immagine"
+
+msgid "Blank"
+msgstr "Vuoto"
+
+msgid "Gluten"
+msgstr "Glutine"
+
+msgid "Crustaceans"
+msgstr "Crostacei"
+
+msgid "Egg"
+msgstr "Uovo"
+
+msgid "Fish"
+msgstr "Pesce"
+
+msgid "Peanuts"
+msgstr "Arachidi"
+
+msgid "Soy"
+msgstr "Soia"
+
+msgid "Milk"
+msgstr "Latte"
+
+msgid "Tree nuts"
+msgstr "Frutta a guscio"
+
+msgid "Celery"
+msgstr "Sedano"
+
+msgid "Mustard"
+msgstr "Senape"
+
+msgid "Sesame seeds"
+msgstr "Semi di sesamo"
+
+msgid "Sulphur dioxide and sulphites"
+msgstr "Anidride solforosa e solfiti"
+
+msgid "Lupin"
+msgstr "Lupino"
+
+msgid "Molluscs"
+msgstr "Molluschi"
+
+msgid "Nickel"
+msgstr "Nickel"

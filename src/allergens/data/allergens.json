@@ -1,0 +1,137 @@
+[
+  {
+    "slug": "egg",
+    "name_en": "Egg",
+    "name_it": "Uovo",
+    "description_en": "",
+    "description_it": "tutti i prodotti composti con uova, anche in parte minima. Tra le più comuni: maionese, frittata, emulsionanti, pasta all’uovo, biscotti e torte anche salate, gelati e creme ecc",
+    "icon": "egg",
+    "index": 3
+  },
+  {
+    "slug": "milk",
+    "name_en": "Milk",
+    "name_it": "Latte",
+    "description_en": "",
+    "description_it": "yogurt, biscotti e torte, gelato e creme varie. Ogni prodotto in cui viene usato il latte",
+    "icon": "milk",
+    "index": 7
+  },
+  {
+    "slug": "gluten",
+    "name_en": "Gluten",
+    "name_it": "Glutine",
+    "description_en": "",
+    "description_it": "cereali, grano, segale, orzo, avena, farro, kamut, inclusi ibridati e derivati",
+    "icon": "gluten",
+    "index": 1
+  },
+  {
+    "slug": "crustaceans",
+    "name_en": "Crustaceans",
+    "name_it": "Crostacei",
+    "description_en": "",
+    "description_it": "sia quelli marini che d’acqua dolce: gamberi, scampi, aragoste, granchi, paguri e simili",
+    "icon": "crustaceans",
+    "index": 2
+  },
+  {
+    "slug": "fish",
+    "name_en": "Fish",
+    "name_it": "Pesce",
+    "description_en": "",
+    "description_it": "inclusi i derivati, cioè tutti quei prodotti alimentari che si compongono di pesce, anche se in piccole percentuali",
+    "icon": "fish",
+    "index": 4
+  },
+  {
+    "slug": "peanuts",
+    "name_en": "Peanuts",
+    "name_it": "Arachidi",
+    "description_en": "",
+    "description_it": "snack confezionati, creme e condimenti in cui vi sia anche in piccole dosi",
+    "icon": "peanuts",
+    "index": 5
+  },
+  {
+    "slug": "soy",
+    "name_en": "Soy",
+    "name_it": "Soia",
+    "description_en": "",
+    "description_it": "latte, tofu, spaghetti, etc.",
+    "icon": "soy",
+    "index": 6
+  },
+  {
+    "slug": "tree-nuts",
+    "name_en": "Tree nuts",
+    "name_it": "Frutta a Guscio",
+    "description_en": "",
+    "description_it": "tutti i prodotti che includono: mandorle, nocciole, noci comuni, noci di acagiù, noci pecan e del Brasile e Queensland, pistacchi",
+    "icon": "tree_nuts",
+    "index": 8
+  },
+  {
+    "slug": "celery",
+    "name_en": "Celery",
+    "name_it": "Sedano",
+    "description_en": "",
+    "description_it": "presente in pezzi ma pure all’interno di preparati per zuppe, salse e concentrati vegetali",
+    "icon": "celery",
+    "index": 9
+  },
+  {
+    "slug": "mustard",
+    "name_en": "Mustard",
+    "name_it": "Senape",
+    "description_en": "",
+    "description_it": "si può trovare nelle salse e nei condimenti, specie nella mostarda",
+    "icon": "mustard",
+    "index": 10
+  },
+  {
+    "slug": "sesame",
+    "name_en": "Sesame seeds",
+    "name_it": "Semi di sesamo",
+    "description_en": "",
+    "description_it": "oltre ai semi interi usati per il pane, possiamo trovare tracce in alcuni tipi di farine",
+    "icon": "sesame",
+    "index": 11
+  },
+  {
+    "slug": "sulphites",
+    "name_en": "Sulphur dioxide and sulphites",
+    "name_it": "Anidride solforica e solfiti",
+    "description_en": "",
+    "description_it": "in concentrazioni superiori a 10 mg/Kg o 10 mg/litro in termini di anidride solforosa totale",
+    "icon": "sulphites",
+    "index": 12
+  },
+  {
+    "slug": "lupin",
+    "name_en": "Lupin",
+    "name_it": "Lupino",
+    "description_en": "",
+    "description_it": "presente ormai in molti cibi vegan, sotto forma di arrosti, salamini, farine e similari che hanno come base questo legume, ricco di proteine",
+    "icon": "lupin",
+    "index": 13
+  },
+  {
+    "slug": "molluscs",
+    "name_en": "Molluscs",
+    "name_it": "Molluschi",
+    "description_en": "",
+    "description_it": "canestrello, cannolicchio, capasanta, cuore, dattero di mare, fasolaro, garagolo, lumachino, muscolo, murice, ostrica, patella, tartufo di mare, tellina e vongola etc.",
+    "icon": "molluscs",
+    "index": 14
+  },
+  {
+    "slug": "nickel",
+    "name_en": "Nickel",
+    "name_it": "Nickel",
+    "description_en": "",
+    "description_it": "",
+    "icon": "nickel",
+    "index": 15
+  }
+]
