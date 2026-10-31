@@ -4,12 +4,15 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-github.io-blue)](https://dlrsp.github.io/django-allergens/)
 
-EU Annex II food allergen vocabulary (+ nickel) for Django, with Filer images,
-modeltranslation-ready name/slug/description fields, and an idempotent catalog
-loader.
+EU Annex II food **allergen vocabulary** (+ nickel) for Django sites, with
+translatable names/slugs, catalog images, and an idempotent seed loader.
 
-Default language is **English**; Italian UI, URL prefixes (`allergeni/`), and
-catalog fields are included.
+## Why use it
+
+- Standard allergen codes and labels without maintaining your own list
+- English default with Italian UI, URL prefixes (`allergeni/`), and catalog fields
+- Filer-backed images ready for admin and public pages
+- Drop-in dependency for ingredient and recipe catalogs
 
 ## Requirements
 
@@ -50,9 +53,6 @@ from allergens.models import Allergen
 
 egg = Allergen.objects.get(slug="egg")
 ```
-
-Choice values (`icon`) are English stable codes; Italian labels ship in
-`locale/it`. Catalog natural-language fields use modeltranslation (`en` / `it`).
 
 ## License
 
