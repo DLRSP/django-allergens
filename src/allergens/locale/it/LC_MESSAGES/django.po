@@ -80,3 +80,9 @@ msgstr "Molluschi"
 
 msgid "Nickel"
 msgstr "Nickel"
+
+msgid "allergens/"
+msgstr "allergeni/"
+
+msgid "allergens/<slug:slug>/"
+msgstr "allergeni/<slug:slug>/"

@@ -57,8 +57,11 @@ class UrlconfTests(SimpleTestCase):
 
         clear_url_caches()
         set_urlconf(settings.ROOT_URLCONF)
-        url = reverse("allergen-detail", kwargs={"slug": "egg"})
-        assert url.endswith("/allergens/egg/")
+        from django.utils import translation
+
+        with translation.override("en"):
+            url = reverse("allergen-detail", kwargs={"slug": "egg"})
+        assert "/allergens/egg/" in url
 
     def test_root_urlconf_loads(self):
         """I2: tests.urls can resolve without ImproperlyConfigured."""

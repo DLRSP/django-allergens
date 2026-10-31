@@ -2,16 +2,20 @@
 
 [![CI](https://github.com/DLRSP/django-allergens/actions/workflows/ci.yaml/badge.svg)](https://github.com/DLRSP/django-allergens/actions/workflows/ci.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Docs](https://img.shields.io/badge/docs-github.io-blue)](https://dlrsp.github.io/django-allergens/)
 
 EU Annex II food allergen vocabulary (+ nickel) for Django, with Filer images,
 modeltranslation-ready name/slug/description fields, and an idempotent catalog
 loader.
 
+Default language is **English**; Italian UI, URL prefixes (`allergeni/`), and
+catalog fields are included.
+
 ## Requirements
 
 - Python 3.10+
 - Django 4.2+
-- django-filer
+- django-filer (+ mptt, easy-thumbnails, polymorphic)
 - django-modeltranslation
 
 ## Install
@@ -26,6 +30,8 @@ INSTALLED_APPS = [
     # ...
     "easy_thumbnails",
     "filer",
+    "mptt",
+    "polymorphic",
     "allergens",
 ]
 ```
@@ -34,6 +40,8 @@ INSTALLED_APPS = [
 python manage.py migrate
 python manage.py load_allergen_catalog
 ```
+
+Include `allergens.urls` inside `i18n_patterns` for translated path prefixes.
 
 ## Quick usage
 

@@ -1,4 +1,4 @@
-"""Idempotent allergen catalog loader (keyed by slug)."""
+"""Idempotent allergen catalog loader (keyed by English slug)."""
 
 from __future__ import annotations
 
@@ -24,8 +24,12 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         created = updated = 0
         for row in _load_rows():
+            slug_en = row.get("slug_en") or row["slug"]
+            slug_it = row.get("slug_it") or slug_en
+            name_en = row.get("name_en") or row.get("name_it") or slug_en
+            name_it = row.get("name_it") or name_en
             defaults = {
-                "name": row.get("name_en") or row.get("name_it") or row["slug"],
+                "name": name_en,
                 "description": row.get("description_en")
                 or row.get("description_it")
                 or "",
@@ -33,22 +37,21 @@ class Command(BaseCommand):
                 "index": row.get("index"),
             }
             obj, was_created = Allergen.objects.update_or_create(
-                slug=row["slug"],
+                slug=slug_en,
                 defaults=defaults,
             )
-            # Prefer Italian translations when modeltranslation columns exist.
-            if hasattr(obj, "name_it") and row.get("name_it"):
-                obj.name_it = row["name_it"]
-            if hasattr(obj, "description_it") and row.get("description_it") is not None:
-                obj.description_it = row["description_it"]
-            if hasattr(obj, "name_en") and row.get("name_en"):
-                obj.name_en = row["name_en"]
-            if hasattr(obj, "description_en") and row.get("description_en") is not None:
-                obj.description_en = row["description_en"]
-            if hasattr(obj, "slug_it"):
-                obj.slug_it = row["slug"]
+            if hasattr(obj, "name_en"):
+                obj.name_en = name_en
+            if hasattr(obj, "name_it"):
+                obj.name_it = name_it
+            if hasattr(obj, "description_en"):
+                obj.description_en = row.get("description_en") or ""
+            if hasattr(obj, "description_it"):
+                obj.description_it = row.get("description_it") or ""
             if hasattr(obj, "slug_en"):
-                obj.slug_en = row["slug"]
+                obj.slug_en = slug_en
+            if hasattr(obj, "slug_it"):
+                obj.slug_it = slug_it
             obj.save()
             if was_created:
                 created += 1

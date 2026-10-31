@@ -6,7 +6,9 @@
     "description_en": "",
     "description_it": "tutti i prodotti composti con uova, anche in parte minima. Tra le più comuni: maionese, frittata, emulsionanti, pasta all’uovo, biscotti e torte anche salate, gelati e creme ecc",
     "icon": "egg",
-    "index": 3
+    "index": 3,
+    "slug_en": "egg",
+    "slug_it": "uovo"
   },
   {
     "slug": "milk",
@@ -15,7 +17,9 @@
     "description_en": "",
     "description_it": "yogurt, biscotti e torte, gelato e creme varie. Ogni prodotto in cui viene usato il latte",
     "icon": "milk",
-    "index": 7
+    "index": 7,
+    "slug_en": "milk",
+    "slug_it": "latte"
   },
   {
     "slug": "gluten",
@@ -24,7 +28,9 @@
     "description_en": "",
     "description_it": "cereali, grano, segale, orzo, avena, farro, kamut, inclusi ibridati e derivati",
     "icon": "gluten",
-    "index": 1
+    "index": 1,
+    "slug_en": "gluten",
+    "slug_it": "glutine"
   },
   {
     "slug": "crustaceans",
@@ -33,7 +39,9 @@
     "description_en": "",
     "description_it": "sia quelli marini che d’acqua dolce: gamberi, scampi, aragoste, granchi, paguri e simili",
     "icon": "crustaceans",
-    "index": 2
+    "index": 2,
+    "slug_en": "crustaceans",
+    "slug_it": "crostacei"
   },
   {
     "slug": "fish",
@@ -42,7 +50,9 @@
     "description_en": "",
     "description_it": "inclusi i derivati, cioè tutti quei prodotti alimentari che si compongono di pesce, anche se in piccole percentuali",
     "icon": "fish",
-    "index": 4
+    "index": 4,
+    "slug_en": "fish",
+    "slug_it": "pesce"
   },
   {
     "slug": "peanuts",
@@ -51,7 +61,9 @@
     "description_en": "",
     "description_it": "snack confezionati, creme e condimenti in cui vi sia anche in piccole dosi",
     "icon": "peanuts",
-    "index": 5
+    "index": 5,
+    "slug_en": "peanuts",
+    "slug_it": "arachidi"
   },
   {
     "slug": "soy",
@@ -60,7 +72,9 @@
     "description_en": "",
     "description_it": "latte, tofu, spaghetti, etc.",
     "icon": "soy",
-    "index": 6
+    "index": 6,
+    "slug_en": "soy",
+    "slug_it": "soia"
   },
   {
     "slug": "tree-nuts",
@@ -69,7 +83,9 @@
     "description_en": "",
     "description_it": "tutti i prodotti che includono: mandorle, nocciole, noci comuni, noci di acagiù, noci pecan e del Brasile e Queensland, pistacchi",
     "icon": "tree_nuts",
-    "index": 8
+    "index": 8,
+    "slug_en": "tree-nuts",
+    "slug_it": "frutta-a-guscio"
   },
   {
     "slug": "celery",
@@ -78,7 +94,9 @@
     "description_en": "",
     "description_it": "presente in pezzi ma pure all’interno di preparati per zuppe, salse e concentrati vegetali",
     "icon": "celery",
-    "index": 9
+    "index": 9,
+    "slug_en": "celery",
+    "slug_it": "sedano"
   },
   {
     "slug": "mustard",
@@ -87,7 +105,9 @@
     "description_en": "",
     "description_it": "si può trovare nelle salse e nei condimenti, specie nella mostarda",
     "icon": "mustard",
-    "index": 10
+    "index": 10,
+    "slug_en": "mustard",
+    "slug_it": "senape"
   },
   {
     "slug": "sesame",
@@ -96,7 +116,9 @@
     "description_en": "",
     "description_it": "oltre ai semi interi usati per il pane, possiamo trovare tracce in alcuni tipi di farine",
     "icon": "sesame",
-    "index": 11
+    "index": 11,
+    "slug_en": "sesame",
+    "slug_it": "semi-di-sesamo"
   },
   {
     "slug": "sulphites",
@@ -105,7 +127,9 @@
     "description_en": "",
     "description_it": "in concentrazioni superiori a 10 mg/Kg o 10 mg/litro in termini di anidride solforosa totale",
     "icon": "sulphites",
-    "index": 12
+    "index": 12,
+    "slug_en": "sulphites",
+    "slug_it": "solfiti"
   },
   {
     "slug": "lupin",
@@ -114,7 +138,9 @@
     "description_en": "",
     "description_it": "presente ormai in molti cibi vegan, sotto forma di arrosti, salamini, farine e similari che hanno come base questo legume, ricco di proteine",
     "icon": "lupin",
-    "index": 13
+    "index": 13,
+    "slug_en": "lupin",
+    "slug_it": "lupino"
   },
   {
     "slug": "molluscs",
@@ -123,7 +149,9 @@
     "description_en": "",
     "description_it": "canestrello, cannolicchio, capasanta, cuore, dattero di mare, fasolaro, garagolo, lumachino, muscolo, murice, ostrica, patella, tartufo di mare, tellina e vongola etc.",
     "icon": "molluscs",
-    "index": 14
+    "index": 14,
+    "slug_en": "molluscs",
+    "slug_it": "molluschi"
   },
   {
     "slug": "nickel",
@@ -132,6 +160,8 @@
     "description_en": "",
     "description_it": "",
     "icon": "nickel",
-    "index": 15
+    "index": 15,
+    "slug_en": "nickel",
+    "slug_it": "nickel"
   }
 ]

@@ -1,10 +1,16 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 from django.urls import reverse
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import get_language, gettext_lazy as _
 from filer.fields.image import FilerImageField
 
 from allergens.constants import ALLERGEN_ICON
+
+
+def _active_slug(obj, field="slug"):
+    lang = (get_language() or "en").split("-")[0]
+    value = getattr(obj, f"{field}_{lang}", None)
+    return value or getattr(obj, field)
 
 
 class Allergen(models.Model):
@@ -36,7 +42,9 @@ class Allergen(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("allergen-detail", kwargs={"slug": self.slug})
+        return reverse(
+            "allergen-detail", kwargs={"slug": _active_slug(self)}
+        )
 
     def save(self, *args, **kwargs):
         if not self.slug:

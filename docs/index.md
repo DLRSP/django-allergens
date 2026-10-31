@@ -1,39 +1,14 @@
 # django-allergens
 
-Template repository for a **reusable Django app** published on PyPI. After you clone and rename, replace the placeholder import package `allergens` and the distribution name `django-allergens` across the tree (see the checklist in `README.md`).
+EU Annex II food allergen vocabulary (+ nickel) for Django, with Filer images,
+modeltranslation-ready `name` / `slug` / `description`, and an idempotent catalog
+loader.
 
----
+Default language is **English**. Italian translations ship for UI labels, URL
+path prefixes (`allergeni/`), and catalog fields.
 
-## Requirements
+## Links
 
-- Python 3.10+
-- Django 3.2+ (see `pyproject.toml` for declared compatibility)
-
----
-
-## Installation
-
-```shell
-pip install django-allergens
-```
-
-Add the app to `INSTALLED_APPS` using your real module name (after renaming from `allergens`):
-
-```python
-INSTALLED_APPS = [
-    # ...
-    "allergens",
-    # ...
-]
-```
-
----
-
-## Documentation
-
-Full docs are built with [MkDocs](https://www.mkdocs.org/) (Material theme). From the repo root:
-
-```shell
-pip install -e ".[docs]"
-mkdocs serve
-```
+- [Install](install.md)
+- [Usage](usage.md)
+- [GitHub](https://github.com/DLRSP/django-allergens)

@@ -1,0 +1,88 @@
+# English catalog for django-allergens (source language; msgid == msgstr).
+msgid ""
+msgstr ""
+"Project-Id-Version: django-allergens 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Allergens"
+msgstr "Allergens"
+
+msgid "Allergen"
+msgstr "Allergen"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Slug"
+msgstr "Slug"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Icon"
+msgstr "Icon"
+
+msgid "Allergen index"
+msgstr "Allergen index"
+
+msgid "Image"
+msgstr "Image"
+
+msgid "Blank"
+msgstr "Blank"
+
+msgid "Gluten"
+msgstr "Gluten"
+
+msgid "Crustaceans"
+msgstr "Crustaceans"
+
+msgid "Egg"
+msgstr "Egg"
+
+msgid "Fish"
+msgstr "Fish"
+
+msgid "Peanuts"
+msgstr "Peanuts"
+
+msgid "Soy"
+msgstr "Soy"
+
+msgid "Milk"
+msgstr "Milk"
+
+msgid "Tree nuts"
+msgstr "Tree nuts"
+
+msgid "Celery"
+msgstr "Celery"
+
+msgid "Mustard"
+msgstr "Mustard"
+
+msgid "Sesame seeds"
+msgstr "Sesame seeds"
+
+msgid "Sulphur dioxide and sulphites"
+msgstr "Sulphur dioxide and sulphites"
+
+msgid "Lupin"
+msgstr "Lupin"
+
+msgid "Molluscs"
+msgstr "Molluscs"
+
+msgid "Nickel"
+msgstr "Nickel"
+
+msgid "allergens/"
+msgstr "allergens/"
+
+msgid "allergens/<slug:slug>/"
+msgstr "allergens/<slug:slug>/"
