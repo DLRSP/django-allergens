@@ -8,6 +8,7 @@ from importlib import resources
 from django.core.management.base import BaseCommand
 from django.db import transaction
 
+from allergens.filer_seed import ensure_folder, ensure_image_from_package
 from allergens.models import Allergen
 
 
@@ -18,11 +19,25 @@ def _load_rows() -> list[dict]:
 
 
 class Command(BaseCommand):
-    help = "Load the EU allergen (+ nickel) catalog idempotently by slug."
+    help = (
+        "Load the EU allergen (+ nickel) catalog idempotently by English slug, "
+        "including Filer images under the Allergens folder."
+    )
+
+    def add_arguments(self, parser):
+        parser.add_argument(
+            "--skip-images",
+            action="store_true",
+            help="Do not import package Filer images.",
+        )
 
     @transaction.atomic
     def handle(self, *args, **options):
-        created = updated = 0
+        created = updated = images = 0
+        folder = None
+        if not options["skip_images"]:
+            folder = ensure_folder("Allergens")
+
         for row in _load_rows():
             slug_en = row.get("slug_en") or row["slug"]
             slug_it = row.get("slug_it") or slug_en
@@ -52,6 +67,23 @@ class Command(BaseCommand):
                 obj.slug_en = slug_en
             if hasattr(obj, "slug_it"):
                 obj.slug_it = slug_it
+
+            if folder is not None and not obj.image_id:
+                rel = row.get("image") or f"images/{slug_en}.jpg"
+                if rel.startswith("images/"):
+                    image_rel = rel
+                else:
+                    image_rel = f"images/{rel}"
+                image = ensure_image_from_package(
+                    package="allergens",
+                    relative=image_rel,
+                    folder=folder,
+                    name=name_en,
+                )
+                if image is not None:
+                    obj.image = image
+                    images += 1
+
             obj.save()
             if was_created:
                 created += 1
@@ -60,7 +92,7 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Allergen catalog: {created} created, {updated} updated "
-                f"({created + updated} total)."
+                f"Allergen catalog: {created} created, {updated} updated, "
+                f"{images} images attached ({created + updated} total)."
             )
         )

@@ -40,6 +40,15 @@ class AllergenModelTests(TestCase):
         self.assertEqual(egg.name_it, "Uovo")
         self.assertEqual(egg.slug_en, "egg")
         self.assertEqual(egg.slug_it, "uovo")
+        self.assertTrue(egg.description_en)
+        self.assertTrue(egg.image_id)
+
+    def test_catalog_english_is_canonical_identity(self):
+        call_command("load_allergen_catalog")
+        for allergen in Allergen.objects.all():
+            self.assertEqual(allergen.slug, allergen.slug_en)
+            self.assertNotEqual(allergen.slug_en, "")
+            self.assertNotEqual(allergen.name_en, "")
 
     def test_reverse_en_and_it_path_prefixes(self):
         call_command("load_allergen_catalog")

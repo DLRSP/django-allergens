@@ -3,165 +3,180 @@
     "slug": "egg",
     "name_en": "Egg",
     "name_it": "Uovo",
-    "description_en": "",
+    "description_en": "All products containing eggs, even in minimal amounts. Common sources include mayonnaise, omelettes, emulsifiers, egg pasta, sweet and savoury biscuits and cakes, ice creams and creams.",
     "description_it": "tutti i prodotti composti con uova, anche in parte minima. Tra le più comuni: maionese, frittata, emulsionanti, pasta all’uovo, biscotti e torte anche salate, gelati e creme ecc",
     "icon": "egg",
     "index": 3,
     "slug_en": "egg",
-    "slug_it": "uovo"
+    "slug_it": "uovo",
+    "image": "images/egg.jpg"
   },
   {
     "slug": "milk",
     "name_en": "Milk",
     "name_it": "Latte",
-    "description_en": "",
+    "description_en": "Yogurt, biscuits and cakes, ice cream and various creams. Any product that uses milk.",
     "description_it": "yogurt, biscotti e torte, gelato e creme varie. Ogni prodotto in cui viene usato il latte",
     "icon": "milk",
     "index": 7,
     "slug_en": "milk",
-    "slug_it": "latte"
+    "slug_it": "latte",
+    "image": "images/milk.jpg"
   },
   {
     "slug": "gluten",
     "name_en": "Gluten",
     "name_it": "Glutine",
-    "description_en": "",
+    "description_en": "Cereals including wheat, rye, barley, oats, spelt, kamut, including hybrids and derivatives.",
     "description_it": "cereali, grano, segale, orzo, avena, farro, kamut, inclusi ibridati e derivati",
     "icon": "gluten",
     "index": 1,
     "slug_en": "gluten",
-    "slug_it": "glutine"
+    "slug_it": "glutine",
+    "image": "images/gluten.jpg"
   },
   {
     "slug": "crustaceans",
     "name_en": "Crustaceans",
     "name_it": "Crostacei",
-    "description_en": "",
+    "description_en": "Marine and freshwater crustaceans: shrimp, scampi, lobster, crab, hermit crab and similar.",
     "description_it": "sia quelli marini che d’acqua dolce: gamberi, scampi, aragoste, granchi, paguri e simili",
     "icon": "crustaceans",
     "index": 2,
     "slug_en": "crustaceans",
-    "slug_it": "crostacei"
+    "slug_it": "crostacei",
+    "image": "images/crustaceans.jpg"
   },
   {
     "slug": "fish",
     "name_en": "Fish",
     "name_it": "Pesce",
-    "description_en": "",
+    "description_en": "Including derivatives — any food that contains fish, even in small percentages.",
     "description_it": "inclusi i derivati, cioè tutti quei prodotti alimentari che si compongono di pesce, anche se in piccole percentuali",
     "icon": "fish",
     "index": 4,
     "slug_en": "fish",
-    "slug_it": "pesce"
+    "slug_it": "pesce",
+    "image": "images/fish.jpg"
   },
   {
     "slug": "peanuts",
     "name_en": "Peanuts",
     "name_it": "Arachidi",
-    "description_en": "",
+    "description_en": "Packaged snacks, creams and dressings that contain even small amounts.",
     "description_it": "snack confezionati, creme e condimenti in cui vi sia anche in piccole dosi",
     "icon": "peanuts",
     "index": 5,
     "slug_en": "peanuts",
-    "slug_it": "arachidi"
+    "slug_it": "arachidi",
+    "image": "images/peanuts.jpg"
   },
   {
     "slug": "soy",
     "name_en": "Soy",
     "name_it": "Soia",
-    "description_en": "",
+    "description_en": "Soy milk, tofu, noodles, and similar products.",
     "description_it": "latte, tofu, spaghetti, etc.",
     "icon": "soy",
     "index": 6,
     "slug_en": "soy",
-    "slug_it": "soia"
+    "slug_it": "soia",
+    "image": "images/soy.jpg"
   },
   {
     "slug": "tree-nuts",
     "name_en": "Tree nuts",
     "name_it": "Frutta a Guscio",
-    "description_en": "",
+    "description_en": "Products including almonds, hazelnuts, walnuts, cashews, pecans, Brazil and Queensland nuts, pistachios.",
     "description_it": "tutti i prodotti che includono: mandorle, nocciole, noci comuni, noci di acagiù, noci pecan e del Brasile e Queensland, pistacchi",
     "icon": "tree_nuts",
     "index": 8,
     "slug_en": "tree-nuts",
-    "slug_it": "frutta-a-guscio"
+    "slug_it": "frutta-a-guscio",
+    "image": "images/tree-nuts.jpg"
   },
   {
     "slug": "celery",
     "name_en": "Celery",
     "name_it": "Sedano",
-    "description_en": "",
+    "description_en": "Present in pieces and in soup bases, sauces and vegetable concentrates.",
     "description_it": "presente in pezzi ma pure all’interno di preparati per zuppe, salse e concentrati vegetali",
     "icon": "celery",
     "index": 9,
     "slug_en": "celery",
-    "slug_it": "sedano"
+    "slug_it": "sedano",
+    "image": "images/celery.jpg"
   },
   {
     "slug": "mustard",
     "name_en": "Mustard",
     "name_it": "Senape",
-    "description_en": "",
+    "description_en": "Found in sauces and dressings, especially mustard preparations.",
     "description_it": "si può trovare nelle salse e nei condimenti, specie nella mostarda",
     "icon": "mustard",
     "index": 10,
     "slug_en": "mustard",
-    "slug_it": "senape"
+    "slug_it": "senape",
+    "image": "images/mustard.jpg"
   },
   {
     "slug": "sesame",
     "name_en": "Sesame seeds",
     "name_it": "Semi di sesamo",
-    "description_en": "",
+    "description_en": "Besides whole seeds used on bread, traces may appear in some flours.",
     "description_it": "oltre ai semi interi usati per il pane, possiamo trovare tracce in alcuni tipi di farine",
     "icon": "sesame",
     "index": 11,
     "slug_en": "sesame",
-    "slug_it": "semi-di-sesamo"
+    "slug_it": "semi-di-sesamo",
+    "image": "images/sesame.jpg"
   },
   {
     "slug": "sulphites",
     "name_en": "Sulphur dioxide and sulphites",
     "name_it": "Anidride solforica e solfiti",
-    "description_en": "",
+    "description_en": "At concentrations above 10 mg/kg or 10 mg/l expressed as total sulphur dioxide.",
     "description_it": "in concentrazioni superiori a 10 mg/Kg o 10 mg/litro in termini di anidride solforosa totale",
     "icon": "sulphites",
     "index": 12,
     "slug_en": "sulphites",
-    "slug_it": "solfiti"
+    "slug_it": "solfiti",
+    "image": "images/sulphites.jpg"
   },
   {
     "slug": "lupin",
     "name_en": "Lupin",
     "name_it": "Lupino",
-    "description_en": "",
+    "description_en": "Common in many vegan foods as roasts, sausages, flours and similar protein-rich preparations.",
     "description_it": "presente ormai in molti cibi vegan, sotto forma di arrosti, salamini, farine e similari che hanno come base questo legume, ricco di proteine",
     "icon": "lupin",
     "index": 13,
     "slug_en": "lupin",
-    "slug_it": "lupino"
+    "slug_it": "lupino",
+    "image": "images/lupin.jpg"
   },
   {
     "slug": "molluscs",
     "name_en": "Molluscs",
     "name_it": "Molluschi",
-    "description_en": "",
+    "description_en": "Scallops, razor clams, mussels, oysters, clams and similar shellfish.",
     "description_it": "canestrello, cannolicchio, capasanta, cuore, dattero di mare, fasolaro, garagolo, lumachino, muscolo, murice, ostrica, patella, tartufo di mare, tellina e vongola etc.",
     "icon": "molluscs",
     "index": 14,
     "slug_en": "molluscs",
-    "slug_it": "molluschi"
+    "slug_it": "molluschi",
+    "image": "images/molluscs.jpg"
   },
   {
     "slug": "nickel",
     "name_en": "Nickel",
     "name_it": "Nickel",
-    "description_en": "",
+    "description_en": "Nickel sensitivity note for susceptible consumers.",
     "description_it": "",
     "icon": "nickel",
     "index": 15,
     "slug_en": "nickel",
-    "slug_it": "nickel"
+    "slug_it": "nickel",
+    "image": "images/nickel.jpg"
   }
 ]
